@@ -1,24 +1,290 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Misión 20 : Puliendo la Experiencia - Sonido y Atmósfera</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 20 : Puliendo la Experiencia - Sonido y Atmósfera</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Misión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Implementar un diseño sonoro completo (música, SFX, ambiente).</li>
+                                        <li>Añadir una capa de pulido profesional al proyecto final.</li>
+                                        <li>Utilizar herramientas de IA generativa de audio de forma experta para crear un paquete de sonido cohesivo.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Contexto del sonido como el "alma" del juego.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Presentación del Desafío:</strong> Introducción a las tres capas del diseño sonoro.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Adquisición del plan de producción para el paisaje sonoro.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Taller de generación de assets de audio, implementación y pruebas de inmersión.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Demostración de las experiencias con sonido y feedback sobre el impacto inmersivo.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>El proyecto final con un paisaje sonoro completo: música de fondo en loop, 3-4 efectos de sonido (SFX) clave activados por interacciones, y un sonido de ambiente sutil y continuo.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Prototipos v1.1 de la Misión 19.5.</li>
+                                        <li>Acceso a IAs generativas de audio (ej. Suno AI, ElevenLabs).</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Auriculares para cada estudiante/equipo.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar el acceso a las herramientas de IA de audio.</li>
+                                                <li>Asegurar que Xolo puede generar scripts de Python que activen reproductores de sonido.</li>
+                                                <li>Confirmar que los estudiantes tienen sus prototipos listos.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Entender las tres capas del diseño sonoro (ambiental, SFX, ambiente) para guiar la sesión. Prepararse para una sesión centrada en el audio y la inmersión.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. y Contexto de Misión ⏰ 3 minutos</h2>
+                <p>Establecer un ambiente de trabajo centrado en el pulido final y la creación de atmósfera a través del sonido.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta la misión: darle un alma sonora al proyecto.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Directores. Tienen una experiencia funcional y una mecánica pulida. Hoy, nos enfocamos en el lienzo invisible que envuelve al jugador: el paisaje sonoro y la atmósfera. Un juego silencioso es un mundo a medias. Su misión es darle a su creación una banda sonora y un alma. Este es el pulido final."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de IA y Perfil ⏰ 2 minutos</h3>
+                            <p>El facilitador da la instrucción explícita a los alumnos para que saluden a Xolo en el chat.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Activen su sesión de trabajo para la Misión 20, siguiendo el protocolo estándar."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <p>Clarificar las metas de aprendizaje y presentar las tres capas del diseño sonoro profesional.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Desafío del Día ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce el diseño sonoro y sus tres capas fundamentales.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Esta es la última sesión de producción antes de las pruebas finales. El diseño sonoro profesional se divide en tres capas: música ambiental (que define el tono), efectos de sonido (que dan feedback a las acciones) y sonido ambiente (que hace que el mundo se sienta vivo). Hoy, usarán IAs generativas de audio para crear estas tres capas y añadirlas a su proyecto."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Objetivo de Aprendizaje (I Can Statement) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Al finalizar esta sesión, podrán afirmar con total propiedad: <strong>'Yo puedo diseñar e implementar un paisaje sonoro completo para mi experiencia, utilizando herramientas de IA para generar música y efectos de audio que crean una atmósfera inmersiva.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM ⏰ 10 minutos</h2>
+                <p>Guiar a los estudiantes para que comprendan el plan de producción de un paisaje sonoro y el rol de las IAs de audio.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diálogo Conceptual con Xolo ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador instruye a los estudiantes sobre cómo iniciar su sesión con su 'Diseñador de Sonido'.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Entramos al A.I. GYM. Hoy dirigen una orquesta de IAs de audio. Para entender su rol y su plan de ataque, consulten a su Diseñador de Sonido. Díganle a Xolo: <strong>'Xolo, como nuestro Diseñador de Sonido, guíanos en el plan de producción de 3 pasos para el paisaje sonoro y explícanos cómo usar Suno AI y ElevenLabs.'</strong> Él les dará el plan de ataque (Música, SFX, Ambiente) y les indicará cómo proceder para el Vibe Coding."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 15 minutos</h2>
+                <p>Supervisar el workflow de generación de assets de audio, implementación y pruebas de inmersión.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Generación del Paquete de Audio ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Los equipos utilizan las IAs de audio para generar la música y los efectos de sonido para su proyecto.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora, al Brain Spark. Primera fase: generación de assets. Siguiendo el plan de Xolo, usen las IAs de audio para generar su paquete sonoro. Creen la música ambiental que defina el tono, los 3-4 efectos de sonido (SFX) clave, y un loop de sonido de ambiente sutil. La coherencia con el tema de su proyecto es fundamental."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Implementación y Pruebas de Inmersión ⏰ 8 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los equipos implementan los audios mediante Vibe Coding con Xolo y realizan pruebas con auriculares.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">"Con su paquete de audio listo, describan a Xolo la 'vibe' de implementación. Sean precisos: 'Cuando la puerta desaparece, reproduce este archivo de sonido'. Xolo les dará el código. Impleméntenlo. Luego, pónganse los auriculares y jueguen su experiencia. Ajusten volúmenes y tiempos para lograr el máximo impacto inmersivo. ¿El sonido apoya la atmósfera o distrae?"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Moderar la demostración de las experiencias sonorizadas y el feedback sobre el impacto en la inmersión.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 8) El facilitador guía una breve reflexión sobre el impacto de las capas de sonido.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Tiempo. Reflexión individual. Piensen en su experiencia ahora sonorizada. ¿Qué capa de sonido (música, SFX o ambiente) creen que tuvo el mayor impacto en la inmersión? ¿Cómo cambió la sensación del juego al dejar de ser silencioso?"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Intercambio en Parejas) - 'La Premier Sonora' ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) En parejas, los estudiantes experimentan el proyecto del otro con auriculares.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"En parejas. Es la premier sonora. Intercambien auriculares y experimenten el proyecto de su compañero. Presten atención a cómo el sonido afecta la experiencia. Preparen su feedback. Luego, intercambien roles."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Retroalimentación Estructurada) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 10) El facilitador provee una estructura para el feedback sobre diseño sonoro.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Para el feedback, usen esta estructura: <strong>1. 'La capa de sonido que más me sumergió fue [música/SFX/ambiente] porque...' 2. 'El efecto de sonido para [acción] fue muy efectivo.' 3. 'Una pregunta que tengo sobre su elección de música es...'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Síntesis y Cierre ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 11) El facilitador concluye la fase de producción, declarando los proyectos listos para pruebas finales.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Han completado la fase de producción. Su proyecto tiene ahora todas las capas de un producto profesional: diseño, lógica, arte y sonido. Han dirigido un equipo complejo de herramientas de IA para materializar una visión completa. En las próximas sesiones, nos enfrentaremos a las pruebas finales y a la presentación. Su trabajo está casi listo para el festival."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
